@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "39b1bcef-a992-441a-b8a4-a0a9eca19a52",
+		"name": "micro_credit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10392878"
+	},
+	"item": [
+		{
+			"name": "localhost:8086/credit/findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/credit/findAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"credit",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8086/credit/findById/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/credit/findById/651341cd5d99267ead398afd",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"credit",
+						"findById",
+						"651341cd5d99267ead398afd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8086/credit/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCustomer\":\"651af659dcb8217235e9953d\",\r\n    \"creditType\":\"1\",\r\n    \"descriptionType\":\"Personal\",\r\n    \"outstandingBalance\":1000,\r\n    \"creditAmount\":1000\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8086/credit/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"credit",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8086/credit/update/651341cd5d99267ead398afd",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8086/credit/update/651341cd5d99267ead398afd",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"credit",
+						"update",
+						"651341cd5d99267ead398afd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
